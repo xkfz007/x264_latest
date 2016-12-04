@@ -22,7 +22,8 @@
  * This program is also available under a commercial proprietary license.
  * For more information, contact us at licensing@x264.com.
  *****************************************************************************/
-
+#define _EXAMPLE
+#ifdef _EXAMPLE
 #ifdef _WIN32
 #include <io.h>       /* _setmode() */
 #include <fcntl.h>    /* _O_BINARY */
@@ -138,3 +139,5 @@ fail2:
 fail:
     return -1;
 }
+
+#endif
